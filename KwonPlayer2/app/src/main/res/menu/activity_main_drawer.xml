@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_currentlyPlaying"
+            android:icon="@drawable/ic_play_arrow_black_24dp"
+            android:title="@string/drawer_currently_playing" />
+        <item
+            android:id="@+id/nav_playlists"
+            android:icon="@drawable/ic_playlist_play_black_24dp"
+            android:title="@string/drawer_universal_playlist" />
+        <item
+            android:id="@+id/nav_browseSongsOnDevice"
+            android:icon="@drawable/ic_audiotrack_black_24dp"
+            android:title="@string/drawer_browse_songs" />
+        <item
+            android:id="@+id/nav_browseAlbumArtistGenre"
+            android:icon="@drawable/ic_album_black_24dp"
+            android:title="@string/drawer_browse_album_artist_genre" />
+        <item
+            android:id="@+id/nav_equalizer"
+            android:icon="@drawable/ic_equalizer_black_24dp"
+            android:title="@string/drawer_equalizer" />
+        <item
+            android:id="@+id/nav_photos"
+            android:icon="@drawable/ic_photo_library_black_24dp"
+            android:title="@string/drawer_browse_photos" />
+        <item
+            android:id="@+id/nav_videos"
+            android:icon="@drawable/ic_video_library_black_24dp"
+            android:title="@string/drawer_browse_videos" />
+    </group>
+
+</menu>

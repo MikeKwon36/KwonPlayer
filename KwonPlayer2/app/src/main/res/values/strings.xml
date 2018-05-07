@@ -1,0 +1,176 @@
+<resources>
+    <string name="app_name">KwonPlayer</string>
+    <string name="blank_string"></string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--Main Activity overflow menu-->
+    <string name="action_themes">Themes</string>
+    <string name="action_background">Wallpaper</string>
+
+    <!--Main Activity Drawer AboutAlertDialog text-->
+    <string name="AboutTitle">ABOUT</string>
+    <string name="AboutContent">KwonPlayer
+        \nVersion 1.11
+        \nCopyright &#169; KwonDeveloper 2016
+        \n
+        \nArt Submissions, Feedback, Feature Requests, and Bug Reports can be sent to:
+        \nkwondeveloper@gmail.com
+        \n
+        \nArtwork commissioned by William Tygret (wctygret@gmail.com)
+        \n
+        \nSpecial thanks to: James Davis, Drew Mahrt, Nicole Arndt, Nat Panchee, Rashad Cureton, Adityo Sagir, Robert Errera
+    </string>
+
+    <!--Main Activity BackgroundAlertDialog text-->
+    <string name="WallpaperTitle">CHANGE WALLPAPER</string>
+
+    <!--Main Activity ThemeAlertDialog -->
+    <string name="ThemeTitle">CHANGE THEME</string>
+    <array name="Themes">
+        <item>KwonPlayer Default</item>
+        <item>Panchee Punch</item>
+        <item>Cureton Purple</item>
+        <item>Adi Green</item>
+        <item>Tygret Stripes</item>
+        <item>Steely Davis</item>
+        <item>Ambient Arndt</item>
+        <item>Spades Mahoney</item>
+    </array>
+    <string name="ThemeDEFAULT">KwonPlayer Default</string>
+    <string name="ThemeRED">Panchee Punch</string>
+    <string name="ThemePURPLE">Cureton Purple</string>
+    <string name="ThemeGREEN">Adi Green</string>
+    <string name="ThemeORANGE">Tygret Stripes</string>
+    <string name="ThemeGREY">Steely Davis</string>
+    <string name="ThemeYELLOW">Ambient Arndt</string>
+    <string name="ThemeSPADE">Spades Mahoney</string>
+
+    <!--Main Activity Drawer-->
+    <string name="drawer_currently_playing">Currently Playing</string>
+    <string name="drawer_universal_playlist">Playlists</string>
+    <string name="drawer_browse_songs">Browse Songs</string>
+    <string name="drawer_browse_album_artist_genre">Browse Album/Artist/Genre</string>
+    <string name="drawer_equalizer">Equalizer</string>
+    <string name="drawer_browse_photos">Photos (coming soon!)</string>
+    <string name="drawer_browse_photos_notice">Photo gallery coming soon!</string>
+    <string name="drawer_browse_videos">Videos (coming soon!)</string>
+    <string name="drawer_browse_videos_notice">Video gallery coming soon!</string>
+
+    <!--MainActivityPermissions-->
+    <string name="MainActivity_StoragePermission">Media Player requires permission to access phone storage to retrieve music files</string>
+    <string name="MainActivity_CameraPermission">Media Player requires permission to access camera to take a new photo</string>
+    <string name="MainActivity_photoGalleryPermission">Media Player requires permission to access photo gallery to select photo for background</string>
+
+    <!--MediaPlaybackService-->
+    <string name="audio_focus_error">Audio could not be accessed!</string>
+
+    <!--Song Library Recycler Adapter-->
+    <string name="Recycler_Song_added_to_current_playlist"> added to </string>
+
+    <!--Async BuildSongLibrary-->
+    <string name="Async_buildSongLibrary_Empty_Device">No Music Files were detected in device!</string>
+
+    <!--SongLibrary Fragment-->
+    <string name="SongLibraryFragment_Dialog_Title">Create new playlist with all songs on device?</string>
+    <string name="SongLibraryFragment_Dialog_YES">YES</string>
+    <string name="SongLibraryFragment_Dialog_NO">NO</string>
+    <string name="SongLibraryFragment_Dialog_PlaylistAdded">Playlist added!</string>
+
+    <!--Playlist Fragment-->
+    <string name="PlaylistFragment_Dialog_Title">Manage Playlists</string>
+    <string name="PlaylistFragment_Dialog_New_Button">New</string>
+    <string name="PlaylistFragment_Dialog_New_Button_Toast">Browse songs to start building your playlist!</string>
+    <string name="PlaylistFragment_Dialog_View_Button">View</string>
+    <string name="PlaylistFragment_Dialog_Delete_Button">Delete</string>
+    <string name="PlaylistFragment_Dialog_selection_error">A single playlist must be selected</string>
+    <string name="PlaylistFragment_Dialog_Delete">Playlist(s) deleted</string>
+    <string name="PlaylistFragment_Playlist_DefaultTitle">ALL SONGS ON DEVICE</string>
+    <string name="PlaylistFragment_playlist_title_missing">PLEASE NAME PLAYLIST</string>
+    <string name="PlaylistFragment_playlist_saved">Playlist saved</string>
+    <string name="PlaylistFragment_swipe_delete"> deleted from playlist</string>
+
+    <!--AlbumLibrary Fragment-->
+    <string name="AlbumLibraryFragment_AlbumTab">Albums</string>
+    <string name="AlbumLibraryFragment_ArtistTab">Artists</string>
+    <string name="AlbumLibraryFragment_GenreTab">Genres</string>
+    <string name="AlbumLibraryFragment_PlaylistTab">Android Playlists</string>
+
+    <!--Album Fragment-->
+    <string name="AlbumFragment_Dialog_SongAdded"> added to Current Playlist</string>
+    <string name="AlbumFragment_Dialog_AddAll">Add all songs</string>
+    <string name="AlbumFragment_Dialog_Replace">Replace Playlist</string>
+    <string name="AlbumFragment_Dialog_UnknownAlbum">Unknown Album</string>
+    <string name="AlbumFragment_Dialog_ReplacePlaylistUpdate">Current Playlist replaced!</string>
+    <string name="AlbumFragment_NoAlbumDetected">No Album data found on device!</string>
+
+    <!--Artist Fragment-->
+    <string name="ArtistFragment_Dialog_SongAdded"> added to Current Playlist</string>
+    <string name="ArtistFragment_Dialog_AddAll">Add all songs</string>
+    <string name="ArtistFragment_Dialog_Replace">Replace Playlist</string>
+    <string name="ArtistFragment_Dialog_UnknownArtist">UNKNOWN</string>
+    <string name="ArtistFragment_Dialog_ReplacePlaylistUpdate">Current Playlist replaced!</string>
+    <string name="ArtistFragment_NoArtistsDetected">No Artist data found on device!</string>
+
+    <!--Genre Fragment-->
+    <string name="GenreFragment_Dialog_SongAdded"> added to Current Playlist</string>
+    <string name="GenreFragment_Dialog_AddAll">Add all songs</string>
+    <string name="GenreFragment_Dialog_Replace">Replace Playlist</string>
+    <string name="GenreFragment_Dialog_UnknownGenre">NO GENRE DETERMINED</string>
+    <string name="GenreFragment_Dialog_ReplacePlaylistUpdate">Current Playlist replaced!</string>
+    <string name="GenreFragment_NoGenreDataDetected">No Genre data found on device!</string>
+
+    <!--AndroidPlaylists Fragment-->
+    <string name="AndroidPlaylistFragment_Dialog_SongAdded"> added to Current Playlist</string>
+    <string name="AndroidPlaylistFragment_Dialog_AddAll">Add all songs</string>
+    <string name="AndroidPlaylistFragment_Dialog_Replace">Replace Playlist</string>
+    <string name="AndroidPlaylistFragment_Dialog_UnknownPlaylist">NO TITLE</string>
+    <string name="AndroidPlaylistFragment_Dialog_ReplacePlaylistUpdate">Current Playlist replaced!</string>
+    <string name="AndroidPlaylistFragment_NoPlaylistDetected">No Android Playlists found on device!</string>
+
+    <!--Google Analytics-->
+    <string name="analytics_main_activity">Main Activity</string>
+    <string name="analytics_player_fragment">Player Fragment</string>
+    <string name="analytics_playlist_fragment">Playlist Fragment</string>
+    <string name="analytics_device_songs_fragment">Songs Fragment</string>
+    <string name="analytics_device_albums_fragment">Albums Fragment</string>
+    <string name="analytics_device_artists_fragment">Artists Fragment</string>
+    <string name="analytics_device_genre_fragment">Genres Fragment</string>
+    <string name="analytics_device_androidplaylist_fragment">Android Playlist Fragment</string>
+    <string name="analytics_main_options_menu">Options Menu</string>
+    <string name="analytics_main_options_menu_background">Change Background</string>
+    <string name="analytics_main_options_menu_themes">Change Theme</string>
+    <string name="analytics_main_navigation_menu">Navigation Menu</string>
+    <string name="analytics_main_navigation_menu_ad">Ad Served</string>
+
+    <!--Google adMob-->
+    <string name="ad_mainActivityDrawer_banner_id">ca-app-pub-9268823492673386/6563718951</string>
+
+    <!--EqualizerFragment-->
+    <string name="EqualizerFragment_0db">0 dB</string>
+    <string name="EqualizerFragment_15db">15 dB</string>
+    <string name="EqualizerFragment_50hz">50 Hz</string>
+    <string name="EqualizerFragment_130hz">130 Hz</string>
+    <string name="EqualizerFragment_320hz">320 Hz</string>
+    <string name="EqualizerFragment_800hz">800 Hz</string>
+    <string name="EqualizerFragment_2Khz">2 kHz</string>
+    <string name="EqualizerFragment_5Khz">5 kHz</string>
+    <string name="EqualizerFragment_12.5Khz">12.5 kHz</string>
+    <string name="EqualizerFragment_VIRTUALIZER">VIRTUALIZER</string>
+    <string name="EqualizerFragment_BASSBOOST">BASS</string>
+    <string name="EqualizerFragment_REVERB">REVERB</string>
+    <string name="EqualizerFragment_RESET">RESET ALL</string>
+    <string name="EqualizerFragment_ZERO">-</string>
+    <string name="EqualizerFragment_MAX">+</string>
+    <array name="ReverbPresets">
+        <item>None</item>
+        <item>Large Hall</item>
+        <item>Large Room</item>
+        <item>Medium Hall</item>
+        <item>Medium Room</item>
+        <item>Small Room</item>
+        <item>Plate</item>
+    </array>
+
+</resources>

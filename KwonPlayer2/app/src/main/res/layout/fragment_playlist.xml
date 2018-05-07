@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kwondeveloper.com.kwonplayer.Fragments.PlaylistFragment">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/playlistTitleCardHolder"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/colorTransparentHeader"
+        app:cardCornerRadius="4dp"
+        app:cardPreventCornerOverlap="true">
+        <EditText
+            android:id="@+id/playlistTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:inputType="textCapCharacters"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="@string/PlaylistFragment_Playlist_DefaultTitle"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/playlistFragmentRecycler"
+        android:background="@android:color/transparent"
+        android:scrollbars="vertical"
+        android:layout_below="@id/playlistTitleCardHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/playListFragmentFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_playlist_add_white_24dp"/>
+
+</RelativeLayout>

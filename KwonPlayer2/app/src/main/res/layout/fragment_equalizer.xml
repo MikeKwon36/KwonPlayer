@@ -1,0 +1,451 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/equalizerScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTransparentHeader"
+    tools:context="kwondeveloper.com.kwonplayer.Fragments.EqualizerFragment">
+
+    <LinearLayout
+        android:id="@+id/equalizerLinearLayout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- 50 Hz Equalizer Layout -->
+        <RelativeLayout
+            android:id="@+id/equalizer50HzLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center_horizontal">
+
+            <kwondeveloper.com.kwonplayer.SupportClasses.VerticalSeekBar
+                android:id="@+id/equalizer50Hz"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:max="31"
+                android:progress="16" />
+
+            <TextView
+                android:id="@+id/text50Hz"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/equalizer50Hz"
+                android:layout_alignTop="@+id/equalizer50Hz"
+                android:layout_marginTop="-25dp"
+                android:singleLine="true"
+                android:text="@string/EqualizerFragment_50hz"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/text50HzGain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/equalizer50Hz"
+                android:singleLine="true"
+                android:text="@string/EqualizerFragment_0db"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <!-- 130Hz Equalizer Bar -->
+        <RelativeLayout
+            android:id="@+id/equalizer130HzLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center_horizontal">
+
+            <kwondeveloper.com.kwonplayer.SupportClasses.VerticalSeekBar
+                android:id="@+id/equalizer130Hz"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:max="31"
+                android:progress="16" />
+
+            <TextView
+                android:id="@+id/text130Hz"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/equalizer130Hz"
+                android:layout_marginTop="-25dp"
+                android:singleLine="true"
+                android:text="@string/EqualizerFragment_130hz"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/text130HzGain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/equalizer130Hz"
+                android:singleLine="true"
+                android:text="@string/EqualizerFragment_0db"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <!-- 320Hz Equalizer Bar -->
+        <RelativeLayout
+            android:id="@+id/equalizer320HzLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center_horizontal">
+
+            <kwondeveloper.com.kwonplayer.SupportClasses.VerticalSeekBar
+                android:id="@+id/equalizer320Hz"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:max="31"
+                android:progress="16" />
+
+            <TextView
+                android:id="@+id/text320Hz"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/equalizer320Hz"
+                android:layout_marginTop="-25dp"
+                android:singleLine="true"
+                android:text="@string/EqualizerFragment_320hz"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/text320HzGain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/equalizer320Hz"
+                android:singleLine="true"
+                android:text="@string/EqualizerFragment_0db"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <!-- 800 Hz Equalizer Bar -->
+        <RelativeLayout
+            android:id="@+id/equalizer800HzLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center_horizontal">
+
+            <kwondeveloper.com.kwonplayer.SupportClasses.VerticalSeekBar
+                android:id="@+id/equalizer800Hz"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:max="31"
+                android:progress="16" />
+
+            <TextView
+                android:id="@+id/text800Hz"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/equalizer800Hz"
+                android:layout_marginTop="-25dp"
+                android:singleLine="true"
+                android:text="@string/EqualizerFragment_800hz"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/text800HzGain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/equalizer800Hz"
+                android:singleLine="true"
+                android:text="@string/EqualizerFragment_0db"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <!-- 2 kHz Equalizer Bar -->
+        <RelativeLayout
+            android:id="@+id/equalizer2kHzLayout"
+            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2" >
+
+            <kwondeveloper.com.kwonplayer.SupportClasses.VerticalSeekBar
+                android:id="@+id/equalizer2kHz"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:max="31"
+                android:progress="16" />
+
+            <TextView
+                android:id="@+id/text2kHz"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/equalizer2kHz"
+                android:layout_marginTop="-25dp"
+                android:singleLine="true"
+                android:text="@string/EqualizerFragment_2Khz"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/text2kHzGain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/equalizer2kHz"
+                android:singleLine="true"
+                android:text="@string/EqualizerFragment_0db"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <!-- 5 kHz Equalizer Layout -->
+        <RelativeLayout
+            android:id="@+id/equalizer5kHzLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center_horizontal">
+
+            <kwondeveloper.com.kwonplayer.SupportClasses.VerticalSeekBar
+                android:id="@+id/equalizer5kHz"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:max="31"
+                android:progress="16" />
+
+            <TextView
+                android:id="@+id/text5kHz"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/equalizer5kHz"
+                android:layout_marginTop="-25dp"
+                android:singleLine="true"
+                android:text="@string/EqualizerFragment_5Khz"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/text5kHzGain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/equalizer5kHz"
+                android:singleLine="true"
+                android:text="@string/EqualizerFragment_0db"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <!-- 12.5 kHz Equalizer Layout -->
+        <RelativeLayout
+            android:id="@+id/equalizer12_5kHzLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center_horizontal">
+
+            <kwondeveloper.com.kwonplayer.SupportClasses.VerticalSeekBar
+                android:id="@+id/equalizer12_5kHz"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:max="31"
+                android:progress="16" />
+
+            <TextView
+                android:id="@+id/text12_5kHz"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/equalizer12_5kHz"
+                android:layout_marginTop="-25dp"
+                android:singleLine="true"
+                android:text="@string/EqualizerFragment_12.5Khz"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/text12_5kHzGain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/equalizer12_5kHz"
+                android:singleLine="true"
+                android:text="@string/EqualizerFragment_0db"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/audio_fx_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/equalizerLinearLayout"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/virtualizer_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/EqualizerFragment_VIRTUALIZER"
+            android:textSize="20sp"/>
+
+        <SeekBar
+            android:id="@+id/virtualizer_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/virtualizer_title_text"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/virtualizer_seekbar"
+            android:layout_alignTop="@+id/virtualizer_title_text"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/EqualizerFragment_ZERO"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/virtualizer_seekbar"
+            android:layout_alignTop="@+id/virtualizer_title_text"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/EqualizerFragment_MAX"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/bass_boost_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/virtualizer_seekbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/EqualizerFragment_BASSBOOST"
+            android:textSize="20sp"/>
+
+        <SeekBar
+            android:id="@+id/bass_boost_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bass_boost_title_text"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bass_boost_title_text"
+            android:layout_alignLeft="@+id/textView2"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/EqualizerFragment_ZERO"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_alignTop="@+id/bass_boost_title_text"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/EqualizerFragment_MAX"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/reverb_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bass_boost_seekbar"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/EqualizerFragment_REVERB"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/reverb_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reverb_title_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/resetFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_refresh_white_24dp"/>
+
+</RelativeLayout>
